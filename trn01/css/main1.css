@@ -7,6 +7,7 @@
 
 .header .top_banner {
     border-bottom: 1px solid #f2f2f2;
+    line-height: 40px;
 }
 
 .header .top_banner span {
@@ -17,7 +18,7 @@
     margin: 0 0 0 10px;
     padding: 0 10px;
     border-right: 1px solid #ddd;
-    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
 }
 
 .header .gnb {
