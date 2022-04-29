@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.header .top_banner {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.header .top_banner span {
+    margin: 0 0 0 auto;
+}
+
+.header .top_banner a {
+    margin: 0 0 0 10px;
+    padding: 0 10px;
+    border-right: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.header .gnb {
+    margin: 0 0 0 auto;
+}
+
+.header .gnb>ul {
+    display: flex;
+    gap: 30px;
+    line-height: 90px;
+    font-size: 19px;
+    font-weight: 500;
+}
