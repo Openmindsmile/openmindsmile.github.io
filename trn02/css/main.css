@@ -17,7 +17,7 @@ body {
 
 .top_banner {
     padding: 25px 0;
-    background: #f1f1f1;
+    background: rgb(152, 152, 152);
 }
 
 .top_banner .container {
@@ -39,8 +39,8 @@ body {
 
 .top_banner a {
     padding: 0px 15px 4px 15px;
-    border: 1px solid #333;
-    margin: 0 0 0 20px;
+    border: 1px solid rgb(249, 247, 247);
+    margin: 10px 0 0 30px;
 }
 
 .top_banner i {
@@ -48,11 +48,17 @@ body {
     top: 0;
     right: 0;
     padding: 15px;
-    background: #333;
+    background: rgb(255, 255, 255);
     /* border-radius: 50%; */
-    color: white;
+    color: rgb(6, 69, 41);
     cursor: pointer;
 }
+
+////////////////
+
+
+
+////////////////////////////////////////
 
 .header .gnb {
     line-height: 100px;
@@ -71,16 +77,16 @@ body {
 
 nav>ul {
     display: flex;
-
+    margin-top: 10px;
 }
 
-nav>ul>li {}
 
-nav>ul>li~li::before {
+
+nav>ul>li::before {
     content: "";
     display: inline-block;
     width: 1px;
-    height: 13px;
+    height: 15px;
     background: #ddd;
     margin: 0 20px;
 }
@@ -88,7 +94,7 @@ nav>ul>li~li::before {
 
 #searchForm input[type='text'] {
     border: none;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 3px solid #ddd;
     outline: none;
     padding: 5px 0;
 }
@@ -157,6 +163,7 @@ nav>ul>li~li::before {
     font-size: 13px;
     font-weight: 300;
     margin: 0 0 20px 0;
+    flex: 0%;
 
 }
 
@@ -169,6 +176,7 @@ nav>ul>li~li::before {
 
 
 .main_visual figure a {
+
     display: inline-block;
     font-size: 13px;
 
@@ -190,7 +198,7 @@ nav>ul>li~li::before {
 .main_visual figure.on h3 {
     transform: translateY(0);
     opacity: 1;
-    transition: 0.5s;
+    transition: 0.9s;
 
 }
 
@@ -202,7 +210,7 @@ nav>ul>li~li::before {
 .main_visual figure.on p {
     transform: translateY(0);
     opacity: 1;
-    transition: 0.5s 0.5s;
+    transition: 0.5s 0.8s;
 }
 
 .main_visual figure a {
@@ -213,7 +221,7 @@ nav>ul>li~li::before {
 .main_visual figure.on a {
     transform: translateY(0);
     opacity: 1;
-    transition: 0.5s 1s;
+    transition: 0.7s 1.5s;
 
 }
 
@@ -265,6 +273,7 @@ nav>ul>li~li::before {
 
 }
 
+/* 
 .visual_2nd .p3 {
 
     width: center;
@@ -317,4 +326,466 @@ nav>ul>li~li::before {
 .visual_2nd {
 
     display: inline;
+}
+ */
+
+/*  */
+
+
+
+
+
+.basic {
+    padding: 100px 0;
+    background: rgb(244, 244, 244);
+    text-align: center;
+
+}
+
+.basic .container {
+    gap: 30px;
+
+}
+
+
+section h2 {
+    font-size: 23px;
+    font-weight: 700;
+    margin-top: 100px;
+    margin-bottom: 15px;
+    text-align: center
+}
+
+section p {
+
+    position: relative;
+    margin-bottom: 30px;
+}
+
+
+.basic figure {
+
+    flex: 1;
+
+}
+
+.basic figure .inbox {
+    overflow: hidden;
+    border-radius: 100% 0% 71% 29% / 72% 0% 100% 28%;
+    transition: 0.7s 0.7s;
+    margin: 0 0 10px 0;
+}
+
+
+.basic figure img {
+    transition: 0.7s;
+}
+
+.basic figure:hover img {
+    transform: scale(1.1);
+}
+
+.basic figure strong {
+    display: block;
+    margin: 0 0 20px 0;
+}
+
+.basic figure a {
+    display: inline-block;
+    border-radius: 50%;
+    background: transparent;
+    color: #333;
+    padding: 2px 15px 3.5px 15px;
+    margin-bottom: 50px;
+}
+
+
+.fixed_bg {
+
+    padding: 100px 0;
+    text-align: center;
+    color: rgb(247, 247, 247);
+    background: url(../img/mainvisual01.jpg) no-repeat fixed center center/cover;
+    filter: grayscale(1);
+    background-attachment: fixed;
+}
+
+.fixed_bg i {
+    padding: 10px;
+    background: #333;
+    margin: 20px 0 0 20px;
+    border-radius: 50%;
+    position: relative;
+
+}
+
+
+.fixed_bg span {
+    vertical-align: middle;
+}
+
+
+.movie {
+    padding: 100px 0;
+
+}
+
+.movie .container {
+    gap: 50px;
+}
+
+.movie .container figure {
+
+    flex: 1;
+}
+
+.movie .container .dec {
+
+    flex: 1;
+    padding: 30px 0;
+}
+
+.movie video {
+    max-width: 100%;
+}
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+video {
+    position: relative;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+
+.video-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+iframe {
+    position: relative;
+    top: 20%;
+    left: 50%;
+    width: 100vw;
+    height: 50vw;
+    transform: translate(-50%, -50%);
+}
+
+
+.video-background {
+    position: absolute;
+    margin-top: 500px;
+
+}
+
+#background-video {
+    width: 100vh;
+    height: ;
+    object-fit: contain;
+    position: flex;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -100;
+
+}
+
+#background-video {
+    width: 1200px;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+.bottom1 {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: large;
+
+}
+
+.bottom2 {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+
+}
+
+
+.product_list {
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.klass {
+    position: absolute;
+    padding: 100px 0;
+    text-align: center;
+    z-index: -100;
+}
+
+.klass p {
+    position: absolute;
+    padding: 100px 0;
+    text-align: center;
+    z-index: -100;
+}
+
+.product_list .product_slider {
+    width: 1200px;
+    margin: 0 auto;
+
+
+}
+
+
+.product_list .product_slider figure {
+    padding: 0 15px;
+
+}
+
+
+.product_list i {
+    margin: 70px 0 0 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+
+}
+
+.product list .s_left {
+    margin: 0 0 0 -650px;
+
+}
+
+.product list .s_right {
+    margin: 0 0 0 650px;
+
+}
+
+
+.product_list .slick-dots {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px 0 0 0;
+
+
+
+
+}
+
+.product_list .slick-dots li {
+    width: 10px;
+    height: 10px;
+    background: rgb(19, 19, 19);
+    border-radius: 50%;
+
+
+}
+
+
+.product_list .slick-dots li.slick-active {
+    background: rgb(0, 124, 101);
+}
+
+.product_list .slick-dots button {
+    display: none;
+}
+
+.product_list .box {
+
+    margin: 0 0 20px 0;
+
+}
+
+
+.product_list figure.on img {
+
+    transition: 0.5s;
+}
+
+.product_list figure.on img {
+
+    transform: scale(1.25);
+}
+
+.product_list figure slick-center img {
+
+    transform: scale(1.25);
+}
+
+.product_list small {
+    position: relative;
+    display: inline-block;
+    border-top: 20px solid rgb(0, 124, 101);
+    border-right: 30px solid transparent;
+    border-bottom: 20px solid rgb(0, 124, 101);
+    border-left: 90px solid rgb(0, 124, 101);
+    width: 0;
+    height: 0;
+    box-sizing: content-box;
+    left: 20px;
+    top: 10px;
+}
+
+.product_list span {
+
+    position: absolute;
+    top: -12px;
+    left: -70px;
+    color: #f7f7f7;
+}
+
+.tab {
+
+    padding: 100px 0;
+    background: #f7f7f7;
+}
+
+.tab .container {
+    gap: 40px;
+
+}
+
+.tab .tab_wrap {
+
+    flex: 1;
+}
+
+.tab_link {
+
+    display: flex;
+    border: 1px solid #ddd;
+}
+
+.tab_link>li {
+    flex: 3;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+
+}
+
+.tab_link>li~li {
+    border-left: 1px solid #ddd
+}
+
+
+.tap figure {
+    flex: 1;
+}
+
+.tab_content>li {
+
+    display: none;
+}
+
+.tab_content>li.on {
+    display: block;
+
+}
+
+.tab_content>li dd {
+    display: flex;
+    justify-content: space-between;
+    line-height: 36px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab_content>li dd strong {
+    width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+
+.footer {
+
+    background: rgb(19, 19, 19);
+    padding: 0 0 50px 0;
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+
+
+}
+
+.footer hr {
+
+    border: none;
+    border-top: 1px solid rgb(59, 59, 59);
+}
+
+.footer .container {
+    justify-content: space-between;
+    line-height: 40px;
+
+}
+
+.footer .footer_top ul {
+    display: flex;
+
+}
+
+
+.footer .footer_top ul li::before {
+
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background: #ddd;
+    margin: 30px 15px;
+    vertical-align: middle;
+}
+
+
+.footer .footer_top .sns {
+    font-size: 0;
+
+}
+
+.footer .footer_top i {
+    padding: 10px;
+    background: #111;
+    font-size: 21px;
+    margin: 10px 2px;
+    vertical-align: middle;
+}
+
+
+.footer #link {
+
+    background: rgb(12, 12, 12);
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px 15px;
+    outline: none;
 }
