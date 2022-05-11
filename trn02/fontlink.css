@@ -1,12 +1,9 @@
-.body {
-    font-family: 'Roboto Mono', monospace;
-}
 
 
 
-.top {
+.div .top {
 
-    margin-left: 300px;
+    text-align: center;
     font-weight: 400;
 }
 
@@ -38,4 +35,10 @@
 
     content: "";
     vertical-align: middle;
+}
+
+
+.style .a :hover
+{
+    transform: rotateZ(180deg);
 }
