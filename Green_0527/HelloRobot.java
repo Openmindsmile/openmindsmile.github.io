@@ -1,0 +1,11 @@
+public class HelloRobot {
+	public static void printHello(int count) {
+		for (int i = 0; i < count; i++) {
+			System.out.println("안녕");
+		}
+	}
+	
+	public static void main(String[] args) {
+		printHello((int) 6.0);
+	}
+}
