@@ -1,0 +1,9 @@
+public class BooleanType {
+	public static void main(String[] args) {
+		boolean t = 1;
+		boolean f = 0;
+		
+		System.out.println(t);
+		System.out.println(f);
+	}
+}

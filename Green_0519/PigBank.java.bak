@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+// 500원, 100원, 50원, 10원 4가지 종류의 동전
+
+public class PigBank {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("500원 개수? ");
+		int won500 = scan.nextInt();
+		System.out.println("100원 개수? ");
+		int won100 = scan.nextInt();
+		System.out.println("50원 개수? ");
+		int won50 = scan.nextInt();
+		System.out.println("10원 개수? ");
+		int won10 = scan.nextInt();
+	}
+}

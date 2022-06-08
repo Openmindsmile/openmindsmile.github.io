@@ -1,0 +1,26 @@
+// 두 개의 정수를 입력받아서, 큰 수를 작은 수로 나눈 목과 나머지를 출력하는 프로그램
+// 큰 수가 먼저 입력됩니다.
+import java.util.Scanner;
+
+public class DivMod {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("정수를 입력하시오: ");
+		int large = scan.nextInt();
+		System.out.print("정수를 입력하시오: ");
+		int small = scan.nextInt();
+		
+		// System.out.println(large + "을 " + small + "으로 나눈 몫은 "
+						// + (large / small) + "이고 나머지는 "
+						// + (large % small) + "입니다");
+						
+		System.out.printf("%d을 %d으로 나눈 몫은 %d이고 나머지는 %d입니다."
+							, large, small, large / small, large % small);
+						
+		// System.out.printf("%dHello %dWorld%d\n", 1, 2, 3);
+		// System.out.printf("He%dllo Wo%drld\n", 4, 5);
+		
+		// System.out.println("%dHello");
+	}
+}
