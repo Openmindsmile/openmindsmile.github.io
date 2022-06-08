@@ -1,0 +1,9 @@
+public class MethodsRefParam {
+	public static String concat(String left, String right) {
+		return left + right;
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}
