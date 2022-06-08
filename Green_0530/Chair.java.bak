@@ -1,0 +1,28 @@
+public class Chair {
+	String production;
+	String date;
+	int price;
+	String model;
+	
+	 Chair(String p, String d, int pr, String m) {
+		production = p;
+		date = d;
+		price = pr;
+		model = m;
+	}
+	
+	void printAll() {
+		System.out.println(production);
+		System.out.println(date);
+		System.out.println(price);
+		System.out.println(model);
+	}
+	
+	public static void main(String[] args) {
+		Chair c = new Chair("시디즈", "2016-09-05", 374000, "T50");
+		Chair c2 = new Chair("허먼밀러", "2019-10-21", 2120000, "뉴 에어론");
+		
+		c.printAll();
+		c2.printAll();
+	}
+}

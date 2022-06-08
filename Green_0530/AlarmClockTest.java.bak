@@ -1,0 +1,55 @@
+// p216 AlarmClockTest
+class Time {
+	private int time;
+	private int minute;
+	private int second;
+
+	public Time(int t, int m, int s) {
+		time = t;
+		minute = m;
+		second = s;
+	}
+	
+	public int getTime() {
+		return time;
+	}
+	public int getMinute() {
+		return minute;
+	}
+	public int getSecond() {
+		return second;
+	}
+	public void printAll() {
+		System.out.println(time + ":" + minute + ":" + second);
+	}
+}
+
+class AlarmClock {
+	private Time currentTime; // has-a 관계
+	// class로 만든 자료형은 위 class를 참조해야하므로 무조건 참조형이 됨!
+	private Time alarmTime;
+	// private String str;
+
+	public AlarmClock(Time a, Time c) {
+		alarmTime = a;
+		currentTime = c;
+	}
+	public Time getCurrentTime() { // getter
+		return currentTime;
+	}
+	// public String getStr() {
+		// return str;
+	// }
+}
+
+public class AlarmClockTest {
+	public static void main(String args[]) {
+		Time alarm = new Time(6, 0, 0);
+		Time current = new Time(12, 56, 34);
+		AlarmClock c = new AlarmClock(alarm, current);
+		
+		Time hour = c.getCurrentTime();
+		System.out.println(hour.getTime());
+		hour.printAll();
+	} // end main
+} // end class
