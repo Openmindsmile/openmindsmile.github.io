@@ -1,0 +1,19 @@
+정수 2개와 연산자(문자열 + - * /) 등을 입력받아 사칙연산을 수행하는 계산기 프로그램
+
+오늘 배운거
+논리연산자 &&(and) ||(or) !(not)
+
+형변환 (type conversion(casting))
+자동적 형변환, 자료형의 확장(promotion)
+명시적 형변환, 자료형의 축소(truncation), 자료 손실
+
+참조형 타입 문자열(String)
+문자열의 길이(length)와 문자인덱스(index) 범위
+문자열의 동등함(equals) 비교
+기초형 자료형의 문자열 변환(String.valueOf)
+Scanner 문자열 콘솔 입력
+
+블록(Block)과 범위(Scope)
+지역변수(Local Variable)와 범위
+
+조건문(if-then, if-else, if-elseif-else)과 실행 흐름
