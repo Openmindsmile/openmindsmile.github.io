@@ -1,0 +1,15 @@
+public class SumForUser {
+	public static void main(String[] args) {
+		// 사용자가 정수 범위를 지정 (시작-끝 입력)
+		// 합
+		
+		int start = 0;
+		int end = 100;
+		
+		int sum = 0;
+		for (int i = start; i <= end; i++) {
+			sum += i;
+		}
+		System.out.println(sum);
+	}
+}
